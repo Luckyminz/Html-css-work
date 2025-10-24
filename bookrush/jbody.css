@@ -1,0 +1,129 @@
+.block-1{
+    width: 220px;
+    height: 285px;
+    /* background-color: lightblue; */
+    border-style: solid;
+    border-width: 1.2px;
+    border-color: rgb(172, 171, 171);
+    padding: 8px 8px 8px 8px;
+    border-radius: 10px;
+    background-color: white;
+  
+}
+.image{
+    width: 220px;
+    height: 220px;
+    /* border-style: solid;
+    border-width: 1px;
+    border-color: rgb(255, 0, 0); */
+   
+   
+    position: relative;
+    
+}
+
+.i1{
+    width: 220px;
+    height: 220px;
+    object-fit: contain;
+    object-position: top;
+ 
+}
+
+.offer{
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 3px;
+    padding-right: 5px;
+ 
+
+}
+.cart{
+    position: absolute;
+    bottom: 14PX;
+    left:58px;
+    color: black;
+    background-color: yellow;
+    border-width: 0px;
+    padding: 5px 15px 5px 15px;
+    font-size: 14px;
+    border-radius: 18px;
+    opacity: 0;
+    transition: opacity 0.45s;
+   
+    
+}
+
+.back-color{
+    position: absolute;
+    background-color: rgb(226, 225, 225);
+    bottom: 0px;
+    left: 0px;
+    width: 218px;
+    height: 67px;
+    opacity: 0;
+    transition: opacity 0.45s;
+    pointer-events: none;
+       /* border-style: solid;
+    border-width: 1px; */
+    /* border-color: rgb(14, 74, 241); */
+  
+}
+.image:hover .cart{
+     opacity: 0.9;
+     cursor: pointer;
+}
+
+.image:hover .tooltip .back-color{
+    opacity: 0.4;
+}
+
+.lower-con{
+     /* border-style: solid;
+    border-width: 1px;
+    border-color: rgb(156, 250, 5); */
+    width: 220px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info{
+    width: 70px;
+    height: 40px;
+    font-size: 14px;
+    border-width: 0px;
+     background-color: rgb(76, 76, 231);
+     color: white;
+     border-radius: 20px;
+     cursor: pointer;
+     transition: box-shadow 0.55s;
+}
+.info:hover{
+    box-shadow: 2px 3px 3px rgba(0,0,0,0.7);
+    background-color: white;
+    color: rgb(76, 76, 231);
+    font-weight: bold;
+   
+}
+.name{
+    margin-left: 10px;
+    font-size: 19px;
+} 
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+   row-gap: 30px;
+   column-gap: 10px;
+   
+   
+   background-color: rgb(238, 233, 233);
+   border-width: 1px;
+   padding: 15px 1px 10px 15px;
+}
